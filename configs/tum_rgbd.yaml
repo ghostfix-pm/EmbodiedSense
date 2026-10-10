@@ -1,0 +1,17 @@
+# TUM recommends ROS-default intrinsics for its pre-registered depth images.
+# Approximate pinhole projection; not a newly measured calibration.
+camera:
+  width: 640
+  height: 480
+  fx: 525.0
+  fy: 525.0
+  cx: 319.5
+  cy: 239.5
+  depth_scale: 5000.0
+  calibration_id: tum_registered_ros_default
+  frame_id: camera_optical
+max_delta_ms: 20.0
+min_depth_m: 0.2
+max_depth_m: 10.0
+stride: 4
+max_gap_ms: 100.0

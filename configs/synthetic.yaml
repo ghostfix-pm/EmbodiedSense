@@ -1,0 +1,15 @@
+camera:
+  width: 64
+  height: 48
+  fx: 60.0
+  fy: 60.0
+  cx: 31.5
+  cy: 23.5
+  depth_scale: 5000.0
+  calibration_id: synthetic_pinhole_v1
+  frame_id: camera_optical
+max_delta_ms: 20.0
+min_depth_m: 0.2
+max_depth_m: 10.0
+stride: 2
+max_gap_ms: 100.0
