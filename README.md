@@ -1,4 +1,4 @@
-# EmbodiedSense
+﻿# EmbodiedSense
 
 RGB-D data infrastructure for robotics. MVP 1: ingestion, timestamp association,
 quality diagnostics, calibrated point-cloud projection, replay and Rerun recording.
@@ -11,10 +11,10 @@ EmbodiedSense 将已有 RGB 图像和深度图接入统一流水线，匹配原�
 
 ## 本机快速使用
 
-项目位于 `D:\Projects\EmbodiedSense`。打开 PowerShell：
+项目位于 `D:\EmbodiedSense`。打开 PowerShell：
 
 ```powershell
-cd D:\Projects\EmbodiedSense
+cd D:\EmbodiedSense
 .venv\Scripts\embodiedsense.exe doctor
 .venv\Scripts\embodiedsense.exe replay --recording outputs/tum-v01 --speed 0
 ```
@@ -139,3 +139,4 @@ GitHub Actions 在 Windows 和 Linux 运行合成数据测试，无需下载真�
 Rerun 用于可视化，OpenCV 用于图像解码，NumPy 用于数值计算。
 本项目没有复制这些项目的算法源码。代码采用 MIT；数据和依赖的许可分别见
 [数据与依赖说明](docs/DATA_LICENSES.md)。
+

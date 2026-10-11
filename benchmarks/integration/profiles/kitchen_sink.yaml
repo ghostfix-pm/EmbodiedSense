@@ -1,0 +1,33 @@
+﻿# EmbodiedSense 集成对照用故障配置：8 种故障全覆盖
+# schema 来源：embodied_sync/corrupt/profile.py (D-0009)
+format_version: 0
+seed: 1234
+corruptions:
+  - stream: cam_wrist
+    kind: fixed_latency
+    offset_ms: 45.0
+  - stream: cam_front
+    kind: jitter
+    distribution: gaussian
+    std_ms: 8.0
+    clip_ms: 30.0
+  - stream: cam_front
+    kind: dropped_frames
+    probability: 0.02
+  - stream: robot_state
+    kind: clock_drift
+    drift_ppm: 100.0
+  - stream: cam_front
+    kind: burst_stall
+    count: 3
+    stall_ms: 80.0
+  - stream: cam_front
+    kind: duplicate_samples
+    probability: 0.01
+  - stream: tactile
+    kind: non_monotonic
+    count: 2
+  - stream: robot_state
+    kind: missing_interval
+    start_ms: 100.0
+    duration_ms: 40.0
